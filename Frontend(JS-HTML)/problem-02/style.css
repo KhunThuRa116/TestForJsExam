@@ -1,0 +1,20 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: .5rem;
+}
+
+.input-group_msg {
+    background-color: orange;
+    padding: .5rem;
+}
+
+.input-group_item {
+    display: flex;
+    gap: .25rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: .5rem;
+}

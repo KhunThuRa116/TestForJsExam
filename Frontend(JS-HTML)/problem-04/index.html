@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Challenge</h1>
+        </div>
+
+        <div class="container-body">
+            <div class="questions">
+                <div class="question_title">
+                    <h2>Questions Sheet</h2>
+                </div>
+
+                <div class="question_body">
+                    <div class="content">
+                        <div class="input-group">
+                            <label for="">Num One</label>
+                            <input type="number" value="0" placeholder="Type Number" id="numOne" oninput="showNo1()">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Num Two</label>
+                            <input type="number" value="0" placeholder="Type Number" id="numTwo" oninput="showNo2()">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Num Three</label>
+                            <input type="number" value="0" placeholder="Type Number" id="numThree" oninput="showNo3()">
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button onclick="maxNo()">Calc-Max</button>
+                        <button onclick="minNo()">Calc-Min</button>
+                        <button onclick="oddNo()">Find-Odd-Number</button>
+                        <button onclick="evenNo()">Find-Even-Number</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="answers">
+                <h2>Answers Sheet</h2>
+                <table>
+                    <tr>
+                        <th>Num One</th>
+                        <td>
+                            <input type="text" placeholder="Show Num One" disabled id="numOne1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Num Two</th>
+                        <td>
+                            <input type="text" placeholder="Show Num Two" disabled id="numTwo1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Num Three</th>
+                        <td>
+                            <input type="text" placeholder="Show Num Three" disabled id="numThree1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Max Number</th>
+                        <td>
+                            <input type="text" placeholder="Max Number" disabled id="Max">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Min Number</th>
+                        <td>
+                            <input type="text" placeholder="Min Number" disabled id="Min">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Odd Number</th>
+                        <td>
+                            <input type="text" placeholder="Display Odd Number/s" disabled id="Odd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Even Number</th>
+                        <td>
+                            <input type="text" placeholder="Display Even Number/s" disabled id="Even">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

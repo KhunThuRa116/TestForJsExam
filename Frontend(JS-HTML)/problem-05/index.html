@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>〇〇倍にする</title>
+</head>
+<body>
+    
+    <h1>〇〇倍にする</h1>
+
+    <div>
+        <div>
+            <input type="number" value="1"  id="inputNo">
+        </div>
+        <div>
+            <button onclick="Multiple(2)">
+                <span>X<sup>2</sup></span>
+            </button>
+
+            <button onclick="Multiple(3)">
+                <span>X<sup>3</sup></span>
+            </button>
+
+            <button onclick="Multiple(4)">
+                <span>X<sup>4</sup></span>
+            </button>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    When you click button X<sup>2</sup> <br>
+                    double the [input value] and update [input value]
+                </li>
+                <li>
+                    When you click button X<sup>3</sup> <br>
+                    triple the [input value] and update [input value]
+                </li>
+                <li>
+                    When you click button X<sup>4</sup> <br>
+                    quadruple the [input value] and update [input value]
+                </li>
+                <li class="warning">
+                    <span>
+                        Before updating [input value], <br>
+                        You have to check below conditions <br>
+                    </span>
+                    <ul>
+                        <li>
+                            If [double value, triple value, quadruple value] is <br>
+                            greater than 100, reset [input value] to 1.
+                        </li>
+                        <li>
+                            If not update [input value].
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

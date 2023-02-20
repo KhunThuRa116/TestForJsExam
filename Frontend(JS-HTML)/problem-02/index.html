@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Icon Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Count Up-Down</title>
+</head>
+
+<body>
+
+    <h1>Count Up-Down</h1>
+
+    <div class="input-group">
+
+        <div class="input-group_msg">
+            Click [+] icon, increases 1 to input text <br>
+            Click [-] icon, decreases 1 to input text <br><br>
+
+            1) When you click [+] icon, if input text is 10, prevent increment <br>
+            2) When you click [-] icon, if input text is 0, prevent decrement
+        </div>
+
+        <div class="input-group_item">
+            <i class="bi bi-plus-lg" onclick="increaseOne()"></i>
+
+            <input type="text" value="0" disabled id="ipNumber">
+            
+            <i class="bi bi-dash-lg" onclick="decreaseOne()"></i>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

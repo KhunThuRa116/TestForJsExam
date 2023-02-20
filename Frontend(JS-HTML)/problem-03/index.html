@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Remove Last & Add Last</title>
+</head>
+
+<body>
+    <h1>Remove Last & Add Last</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <input type="text" placeholder="Enter text" disabled id="inputText">
+        </div>
+
+        <div class="actions">
+            <div class="actions_number">
+                <button onclick="clickInput('1')">1</button>
+                <button onclick="clickInput('2')">2</button>
+                <button onclick="clickInput('3')">3</button>
+                <button onclick="clickInput('4')">4</button>
+                <button onclick="clickInput('5')">5</button>
+                <button onclick="clickInput('6')">6</button>
+                <button onclick="clickInput('7')">7</button>
+                <button onclick="clickInput('8')">8</button>
+                <button onclick="clickInput('9')">9</button>
+                <button onclick="clickInput('0')">0</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="clickInput('a')" class="changeToUpperCase">a</button>
+                <button onclick="clickInput('b')" class="changeToUpperCase">b</button>
+                <button onclick="clickInput('c')" class="changeToUpperCase">c</button>
+                <button onclick="clickInput('d')" class="changeToUpperCase">d</button>
+                <button onclick="clickInput('e')" class="changeToUpperCase">e</button>
+                <button onclick="clickInput('f')" class="changeToUpperCase">f</button>
+                <button onclick="clickInput('g')" class="changeToUpperCase">g</button>
+                <button onclick="clickInput('h')" class="changeToUpperCase">h</button>
+                <button onclick="clickInput('i')" class="changeToUpperCase">i</button>
+                <button onclick="clickInput('j')" class="changeToUpperCase">j</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="clickInput('k')" class="changeToUpperCase">k</button>
+                <button onclick="clickInput('l')" class="changeToUpperCase">l</button>
+                <button onclick="clickInput('m')" class="changeToUpperCase">m</button>
+                <button onclick="clickInput('n')" class="changeToUpperCase">n</button>
+                <button onclick="clickInput('o')" class="changeToUpperCase">o</button>
+                <button onclick="clickInput('p')" class="changeToUpperCase">p</button>
+                <button onclick="clickInput('q')" class="changeToUpperCase">q</button>
+                <button onclick="clickInput('r')" class="changeToUpperCase">r</button>
+                <button onclick="clickInput('s')" class="changeToUpperCase">s</button>
+                <button onclick="clickInput('t')" class="changeToUpperCase">t</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="clickInput('u')" class="changeToUpperCase">u</button>
+                <button onclick="clickInput('v')" class="changeToUpperCase">v</button>
+                <button onclick="clickInput('w')" class="changeToUpperCase">w</button>
+                <button onclick="clickInput('x')" class="changeToUpperCase">x</button>
+                <button onclick="clickInput('y')" class="changeToUpperCase">y</button>
+                <button onclick="clickInput('z')" class="changeToUpperCase">z</button>
+                <button onclick="clickInput(' ')">Space</button>
+                <button onclick="deleteAlp()">Delete</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="clearAlp()">Clear</button>
+            </div>
+            <div class="actions_alphabet">
+                <input type="checkbox" name="" id="upperCaseShift" onchange="big()">Shift
+            </div>
+        </div>
+    </div>
+
+
+    <div class="information">
+        <ol>
+            <li>Clicked numbers/characters/Space were displayed in input [Enter text]</li>
+            <li>Firt Click [character : a] that appends at [Enter text] and showing [a]</li>
+            <li>And then Click [character : p] that appends behind [a] and becomes [ap]</li>
+            <li>When click [Delete], remove last character of input[ap] becomes [a]</li>
+            <li>When click [Clear], remove all characters from input.</li>
+        </ol>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

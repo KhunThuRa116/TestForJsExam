@@ -1,0 +1,21 @@
+.input-group {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-group label {
+    font-size: larger;
+    padding: .25rem;
+}
+
+.input-group input {
+    font-size: medium;
+    padding: .25rem;
+}
+
+.input-group_item {
+    display: flex;
+    gap: .25rem;
+}

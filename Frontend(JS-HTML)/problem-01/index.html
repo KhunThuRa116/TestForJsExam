@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Display Input Value</title>
+</head>
+
+<body>
+
+    <h1>Display Input Value</h1>
+
+    <div class="input-group">
+        <div class="input-group_item">
+            <label for="">①</label>
+            <input type="text" placeholder="Type text..." id="textInput">
+        </div>
+        <div class="input-group_item">
+            <label for="">②</label>
+            <input type="text" placeholder="Show Text" disabled id="showTxt">
+        </div>
+        <div class="input-group_item">
+            <label for="">③</label>
+            <input type="button" value="Show" onclick="showText()">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
