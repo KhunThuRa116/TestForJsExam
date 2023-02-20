@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>String Problems</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="input-layout">
+            <div class="item">
+                <label for="">First String</label>
+            </div>
+            <div class="item">
+                <input type="text" placeholder="Enter Text" id="firstStrInput">
+            </div>
+        </div>
+
+        <div class="input-layout">
+            <div class="item">
+                <label for="">Second String</label>
+            </div>
+            <div class="item">
+                <input type="text" placeholder="Enter Text" id="secondStrInput">
+            </div>
+        </div>
+
+        <div class="input-layout">
+            <div class="item">
+                <label for="">Search Key String</label>
+            </div>
+            <div class="item">
+                <input type="text" placeholder="Enter Text" id="keyStrInput">
+            </div>
+        </div>
+
+        <div class="input-layout">
+            <div class="item">
+                <label for="">Search Key Position</label>
+            </div>
+            <div class="item">
+                <input type="number" placeholder="Enter Pos" id="keyPosition">
+            </div>
+        </div>
+
+        <div class="show-merge-text">
+            <div class="item">
+                <span> Merge two input value = </span>
+            </div>
+            <div class="item">
+                <span id="showConcatStr"> ??? </span>
+            </div>
+            <div class="item">
+                <input type="button" value="mergeStringFirstAndSecond" onclick="concatString()">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="search-key-in-first-text">
+            <div class="item">
+                <span> Search [key input] value in First String =
+                    <br> - if exist show msg "Key Exist"
+                    <br> - if not "Key doesn't exist" </span>
+            </div>
+            <div class="item">
+                <span id="showMsg1"> ??? </span>
+            </div>
+            <div class="item">
+                <input type="button" value="Search" onclick="SearchKeyString1()">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="search-key-in-second-text">
+            <div class="item">
+                <span> Search [key string] value in Second String =
+                    <br> - if exist show msg "Key Exist"
+                    <br> - if not "Key doesn't exist" </span>
+            </div>
+            <div class="item">
+                <span id="showMsg2"> ??? </span>
+            </div>
+            <div class="item">
+                <input type="button" value="Search" onclick="SearchKeyString2()">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="search-char-in-first-text">
+            <div class="item">
+                <span> Search [key position] character in First String =
+                    <br> - if exist show character.
+                    <br> - if not "invalid position" </span>
+            </div>
+            <div class="item">
+                <span id="showMsg3"> ??? </span>
+            </div>
+            <div class="item">
+                <input type="button" value="Search" onclick="SearchKeyPosition1()">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="search-char-in-second-text">
+            <div class="item">
+                <span> Search [key position] character in Second String =
+                    <br> - if exist show character.
+                    <br> - if not "invalid position" </span>
+            </div>
+            <div class="item">
+                <span id="showMsg4"> ??? </span>
+            </div>
+            <div class="item">
+                <input type="button" value="Search" onclick="SearchKeyPosition2()">
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
